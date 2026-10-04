@@ -7,7 +7,6 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 EMAIL = "support@hagedornworks.se"
-POSTAL = "{{POSTAL_ADDRESS}}"
 UPDATED = "4 October 2026"
 
 TEMPLATE = """<!doctype html>
@@ -89,7 +88,7 @@ PRIVACY = f"""
 
 <h2>1. Who is responsible</h2>
 <p>The controller of personal data described in this policy is:</p>
-<p>Joachim Hagedorn<br>{POSTAL}<br>Sweden<br><a href="mailto:{EMAIL}">{EMAIL}</a></p>
+<p>Joachim Hagedorn<br>Sweden<br><a href="mailto:{EMAIL}">{EMAIL}</a></p>
 
 <h2>2. What stays on your device</h2>
 <p>Puzzle progress, statistics, your own notes and candidates, the theme you chose and other app settings are stored locally on your device by the app. This information is not sent to me or to any server I operate. If you delete the app, this information is deleted with it.</p>
@@ -202,7 +201,7 @@ TERMS = f"""
 <p>Swedish law applies. If you are a consumer in the EU/EEA, you keep the mandatory consumer rights of the country where you live, and nothing in these terms takes them away.</p>
 
 <h2>10. Contact</h2>
-<p>Joachim Hagedorn<br>{POSTAL}<br>Sweden<br><a href="mailto:{EMAIL}">{EMAIL}</a></p>
+<p>Joachim Hagedorn<br>Sweden<br><a href="mailto:{EMAIL}">{EMAIL}</a></p>
 """
 
 # ---------------------------------------------------------------- support
