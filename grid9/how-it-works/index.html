@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How it works — Grid9 Sudoku</title>
+<meta name="description" content="How Grid9 teaches sudoku techniques: notes, the strategy panel, hints in doses, highlights, practice mode and statistics.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="How it works — Grid9 Sudoku">
+<meta property="og:description" content="How Grid9 teaches sudoku techniques: notes, the strategy panel, hints in doses, highlights, practice mode and statistics.">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body class="marketing">
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="../">Grid9 Sudoku</a>
+    <nav class="site">
+      <a href="../how-it-works/" aria-current="page">How it works</a>
+      <a href="../features/">Features</a>
+      <a href="../support/">Support</a>
+    </nav>
+  </div>
+</header>
+<main>
+<div class="wrap">
+<h1>How it works</h1>
+<p class="lead">Six short steps from the first note to the last technique. Everything below is how the app behaves today.</p>
+
+<section class="step">
+  <div class="step-text">
+    <p class="step-n">Step 1</p>
+    <h2>Your notes, or automatic ones</h2>
+    
+<p>Grid9 has two kinds of candidates, and you can use either or both.</p>
+<ul>
+<li><strong>Your own notes (amber).</strong> Press a number in the <em>Cand</em> column to note it. These are Snyder-style marks: you only write a number where it has at most two or three places left in a row, column or box. They work completely on their own &mdash; you never have to touch the automatic fill.</li>
+<li><strong>Automatic candidates (grey).</strong> <em>Fill auto</em> adds every number that is still legal in each cell, based on the values already placed.</li>
+</ul>
+<p class="note">Good to know: Fill auto never removes candidates using a technique. To eliminate with a technique, you run it from the strategy panel &mdash; that is where the learning happens.</p>
+
+    <p class="example"><span>Example</span> A cell where your notes say <b>1, 7</b> but automatic candidates would show <b>1, 3, 7, 8, 9</b>.</p>
+  </div>
+  <figure class="shot ph"><div class="ph-inner"><span>Screenshot</span><b>how-notes</b><small>A cell showing amber Snyder notes next to a cell showing grey automatic candidates</small></div></figure>
+</section>
+
+<section class="step">
+  <div class="step-text">
+    <p class="step-n">Step 2</p>
+    <h2>See what is available</h2>
+    
+<p>Tap <em>Hint</em> and a panel slides up from the bottom, with the grid still visible above it. It lists only the techniques that have a hit <em>right now</em>, with a count.</p>
+<p>That makes the list an answer to &ldquo;what can I do here?&rdquo; &mdash; you see that a Naked Pair exists, and how many Naked Singles, without being told where.</p>
+
+    <p class="example"><span>Example</span> <b>Naked Single</b> 5 &middot; <b>Hidden Single</b> 2 &middot; <b>Naked Pair</b> 1</p>
+  </div>
+  <figure class="shot ph"><div class="ph-inner"><span>Screenshot</span><b>how-panel</b><small>The strategy panel listing Naked Single 5, Hidden Single 2, Naked Pair 1</small></div></figure>
+</section>
+
+<section class="step">
+  <div class="step-text">
+    <p class="step-n">Step 3</p>
+    <h2>Help in doses</h2>
+    
+<p>Choose a technique and its detail view opens with a step ladder. Each step gives a bit more help, and you decide how far to go before solving the rest yourself.</p>
+<ul>
+<li><strong>Where?</strong> The mildest hint: where to start looking. Try it yourself before going further.</li>
+<li><strong>Which cells?</strong> Shows exactly which cells the technique involves.</li>
+<li><strong>Why?</strong> The full reasoning &mdash; why the pattern works and what it lets you remove.</li>
+<li><strong>Apply</strong> carries out the move for you.</li>
+</ul>
+<p><em>Next hit</em> is something different: it jumps to the next occurrence of the same technique on the board, if there is more than one.</p>
+
+    
+  </div>
+  <figure class="shot ph"><div class="ph-inner"><span>Short screen recording</span><b>how-ladder</b><small>The step ladder with Where?, Which cells?, Why? and an Apply button</small></div></figure>
+</section>
+
+<section class="step">
+  <div class="step-text">
+    <p class="step-n">Step 4</p>
+    <h2>Reading the highlights</h2>
+    
+<p>Hints are drawn so that shape carries the meaning, not just colour:</p>
+<ul>
+<li>A <strong>solid outline</strong> marks the evidence &mdash; the cells that form the pattern.</li>
+<li>A <strong>dashed outline with a struck-through digit</strong> marks what can be eliminated.</li>
+<li>A <strong>bold digit</strong> is the number that matters in the pattern.</li>
+<li>For techniques where geometry is the argument (X-Wing, wings, chains) <strong>lines between cells</strong> show the shape.</li>
+</ul>
+<p>The same language is used for every technique, so once you can read one hint you can read them all.</p>
+
+    
+  </div>
+  <figure class="shot ph"><div class="ph-inner"><span>Screenshot</span><b>how-highlights</b><small>A pattern outlined with solid frames and an eliminated candidate with a dashed frame and strikethrough</small></div></figure>
+</section>
+
+<section class="step">
+  <div class="step-text">
+    <p class="step-n">Step 5</p>
+    <h2>Practise a technique</h2>
+    
+<p>Open the technique library, choose a technique, and Grid9 gives you a puzzle where it is needed. Two extra buttons appear above the step ladder:</p>
+<ul>
+<li><strong>Explanation</strong> &mdash; the full write-up of the technique, with diagrams. Reading it is always free.</li>
+<li><strong>Step by step</strong> &mdash; walks the exact reasoning chain one link at a time, forwards or backwards, instead of only showing the end result. Lost the thread? Step back and watch it again.</li>
+</ul>
+
+    
+  </div>
+  <figure class="shot ph"><div class="ph-inner"><span>Short screen recording</span><b>how-practice</b><small>The practice view with Explanation and Step by step buttons above the step ladder</small></div></figure>
+</section>
+
+<section class="step">
+  <div class="step-text">
+    <p class="step-n">Step 6</p>
+    <h2>Faster input, your own puzzles, your progress</h2>
+    
+<ul>
+<li><strong>Multi-select.</strong> Drag across several cells to select them at once. Type a number or candidate and it is applied to all of them.</li>
+<li><strong>Enter your own.</strong> Paste in a puzzle from a newspaper, a book or another app, to practise a specific problem or find out where you got stuck. Found in the menu.</li>
+<li><strong>Statistics.</strong> Every solve is tracked automatically: time, mistakes and hints used; which techniques you found yourself versus used a hint for; personal bests and a day streak.</li>
+</ul>
+
+    
+  </div>
+  <figure class="shot ph"><div class="ph-inner"><span>Screenshot</span><b>how-more</b><small>Dragging across several cells to select them, and the statistics view</small></div></figure>
+</section>
+
+<section class="cta">
+  <h2>Want to try it?</h2>
+  <p><span class="btn disabled" aria-disabled="true">Coming soon to the App Store</span></p>
+  <p><a href="../features/">See the full feature list &rarr;</a></p>
+</section>
+</div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p>&copy; 2026 Joachim Hagedorn &middot; <a href="../privacy/">Privacy</a> &middot; <a href="../terms/">Terms</a> &middot; <a href="mailto:support@hagedornworks.se">support@hagedornworks.se</a></p>
+  </div>
+</footer>
+</body>
+</html>
