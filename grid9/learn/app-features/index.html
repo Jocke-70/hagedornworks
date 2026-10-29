@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>App features — Grid9 Sudoku</title>
+<meta name="description" content="A walk through the Grid9 screen and menu: Snyder notes and auto candidates, the hint panel, the step ladder, practice mode, multi-select and settings.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="App features — Grid9 Sudoku">
+<meta property="og:description" content="A walk through the Grid9 screen and menu: Snyder notes and auto candidates, the hint panel, the step ladder, practice mode, multi-select and settings.">
+<link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body class="marketing">
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="../../" aria-label="Grid9 Sudoku, home"><span class="wm" aria-hidden="true">GRID<b>9</b></span><span class="brand-sub" aria-hidden="true">Sudoku</span></a>
+    <nav class="site">
+      <a href="../../how-it-works/">How it works</a>
+      <a href="../../learn/" aria-current="page">Learn</a>
+      <a href="../../features/">Features</a>
+      <a href="../../support/">Support</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="dhero dband has-media"><div class="wrap dwrap"><h1>App features</h1><p class="dlead">A walk through the screen and the menu: what each part does, and which parts need Premium. You do not need to read it in order, every section stands on its own.</p><div class="dhero-media"><figure class="shot"><video autoplay muted loop playsinline preload="metadata" poster="../../../assets/img/candidates.webp" aria-label="Switching between automatic candidates and your own notes"><source src="../../../assets/video/candidates.mp4" type="video/mp4"></video></figure></div></div></section>
+<div class="wrap dafter">
+<section class="step">
+  <div class="step-text">
+    <p class="step-n">Step 1</p>
+    <h2>Two kinds of candidates</h2>
+    <p>Grid9 has two kinds of candidates, and understanding the difference is the key to playing efficiently.</p>
+<ul>
+<li><strong>Snyder notes (amber)</strong> are your own. Tap a number in the grey <em>Notes</em> row to note it (the blue <em>Digits</em> row below places the number itself). The idea, from Snyder notation, is to note a digit only when it has at most two or three possible places left in a row, column or box. That way the notes show patterns instead of drowning them.</li>
+<li><strong>Auto candidates (grey)</strong> are every number that is still legal in a cell. <em>Fill auto</em> adds them, and the button changes to <em>Clear auto</em> to remove them.</li>
+</ul>
+<div class="cellrow"><span class="cellfig"><span class="tcell snyder"><i class="snyder">1</i><i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i><i class="snyder">7</i><i class="off"></i><i class="off"></i></span><small>Snyder<br>my own notes</small></span><span class="cellfig"><span class="tcell auto"><i class="auto">1</i><i class="off"></i><i class="auto">3</i><i class="off"></i><i class="off"></i><i class="off"></i><i class="auto">7</i><i class="auto">8</i><i class="auto">9</i></span><small>Auto<br>everything still legal</small></span></div>
+<p class="note">Fill auto never removes candidates using a technique. It only computes what is possible from the numbers already placed. To eliminate with a technique you run it from the hint panel, which is where the learning happens. Your amber notes are never cleared by Fill auto or by running a technique, only by you or by <em>Clear all candidates</em> in the menu.</p>
+    <figure class="detail"><a class="zoom" href="../../../assets/img/d-notes-rows.webp" target="_blank" rel="noopener" title="Click to enlarge"><img src="../../../assets/img/d-notes-rows.webp" alt="Close-up of the grey Notes row and the blue Digits row" loading="lazy"></a><figcaption>Grey row: tap a digit to note it. Blue row: tap a digit to place it. Clear auto removes the automatic candidates.</figcaption></figure><figure class="detail"><a class="zoom" href="../../../assets/img/d-amber.webp" target="_blank" rel="noopener" title="Click to enlarge"><img src="../../../assets/img/d-amber.webp" alt="Close-up of one cell with two amber notes" loading="lazy"></a><figcaption>Amber marks are your own notes.</figcaption></figure>
+    
+  </div>
+  <figure class="shot"><a class="zoom" href="../../../assets/img/cands-full.webp" target="_blank" rel="noopener" title="Click to enlarge"><img src="../../../assets/img/cands.webp" alt="The grid showing amber notes and grey automatic candidates" loading="lazy"></a><figcaption>Amber and grey candidates side by side. <span class="zoomhint">Click to enlarge.</span></figcaption></figure>
+</section>
+
+<section class="step solo">
+  <div class="step-text">
+    <p class="step-n">Step 2</p>
+    <h2>The Info box and Show candidates</h2>
+    <p>When you select an empty cell, the Info box under the grid says whether there are conflicts and which cell you are on. Its <em>Show candidates</em> checkbox lists exactly which numbers are still possible in that cell, a quick way to double-check your own reasoning.</p>
+<p>That list only looks at the raw row, column and box rules. It does not know what you have crossed out or what a technique has eliminated, so after you have applied a technique it can list more numbers than there are open candidates in the cell.</p>
+    <figure class="detail"><a class="zoom" href="../../../assets/img/d-info.webp" target="_blank" rel="noopener" title="Click to enlarge"><img src="../../../assets/img/d-info.webp" alt="Close-up of the Info box with Show candidates ringed" loading="lazy"></a><figcaption>Show candidates, ringed, reveals what the row, column and box rules allow.</figcaption></figure>
+    
+  </div>
+  
+</section>
+
+<section class="step">
+  <div class="step-text">
+    <p class="step-n">Step 3</p>
+    <h2>The hint panel: see what is available</h2>
+    <p>Tap <em>Hint</em> and a panel slides up from the bottom with the grid still visible above it. It lists every technique that has a hit in the current position, with a count, for example Naked Single 5, Hidden Single 2, Naked Pair 1.</p>
+<p>It tells you what exists without telling you where. This overview is free.</p>
+    <figure class="detail"><a class="zoom" href="../../../assets/img/d-overview.webp" target="_blank" rel="noopener" title="Click to enlarge"><img src="../../../assets/img/d-overview.webp" alt="Close-up of the hint overview with the counts ringed" loading="lazy"></a><figcaption>The ringed numbers are how many places each technique has right now.</figcaption></figure>
+    
+  </div>
+  <figure class="shot"><a class="zoom" href="../../../assets/img/overview-full.webp" target="_blank" rel="noopener" title="Click to enlarge"><img src="../../../assets/img/overview.webp" alt="The hints panel with a list of techniques and how many hits each has" loading="lazy"></a><figcaption>The overview lists only what is available right now. <span class="zoomhint">Click to enlarge.</span></figcaption></figure>
+</section>
+
+<section class="step">
+  <div class="step-text">
+    <p class="step-n">Step 4 <span class="pill" title="Needs Grid9 Premium">Premium</span></p>
+    <h2>The step ladder: help in doses</h2>
+    <p>Tap a technique and its detail view opens with a step ladder. This is the heart of the app: each step gives a bit more help, and you decide how far to go before solving the rest yourself.</p>
+<div class="ladder"><span class="rung">Where?</span><span class="arrow" aria-hidden="true">&rarr;</span><span class="rung">Which cells?</span><span class="arrow" aria-hidden="true">&rarr;</span><span class="rung">Why?</span><span class="arrow" aria-hidden="true">&rarr;</span><span class="rung apply">Apply</span></div>
+<p>Two different ways to move around: the ladder gives different <em>amounts</em> of help for the same hit, and <em>Apply</em> carries the move out. <em>Next hit</em> does something else: it jumps to the next occurrence of the same technique on the board, if there is more than one.</p>
+<p>Hints are drawn the same way for every technique. A <strong>solid outline</strong> marks the pattern, a <strong>dashed outline with a struck-through digit</strong> marks what can be removed, and for geometric techniques such as X-Wing, <strong>lines between cells</strong> show the shape.</p>
+    <figure class="detail"><a class="zoom" href="../../../assets/img/d-ladder.webp" target="_blank" rel="noopener" title="Click to enlarge"><img src="../../../assets/img/d-ladder.webp" alt="Close-up of the step ladder rungs and the Apply button" loading="lazy"></a><figcaption>Rungs reveal a little more each time. Apply makes the move.</figcaption></figure>
+    
+  </div>
+  <figure class="shot"><a class="zoom" href="../../../assets/img/ladder-full.webp" target="_blank" rel="noopener" title="Click to enlarge"><img src="../../../assets/img/ladder.webp" alt="The step ladder for Empty Rectangle" loading="lazy"></a><figcaption>Where, Which cells, Why and Apply. <span class="zoomhint">Click to enlarge.</span></figcaption></figure>
+</section>
+
+<section class="step">
+  <div class="step-text">
+    <p class="step-n">Step 5 <span class="pill" title="Needs Grid9 Premium">Premium</span></p>
+    <h2>Practice mode and Step by step</h2>
+    <p>Choose <em>Practice technique&hellip;</em> in the gear menu and Grid9 gives you a puzzle where that technique is needed. Two buttons appear above the ladder:</p>
+<ul>
+<li><strong>Explanation</strong> is the full write-up of the technique with diagrams. Reading it is free.</li>
+<li><strong>Step by step</strong> walks the exact reasoning chain one link at a time, forwards or backwards, instead of only showing the end result.</li>
+</ul>
+<p>For a full guide to using it, see <a href="../learning-a-strategy/">Learning a strategy</a>.</p>
+    <figure class="detail"><a class="zoom" href="../../../assets/img/d-buttons.webp" target="_blank" rel="noopener" title="Click to enlarge"><img src="../../../assets/img/d-buttons.webp" alt="Close-up of the Explanation and Step by step buttons" loading="lazy"></a><figcaption>Explanation and Step by step sit above the ladder in practice mode.</figcaption></figure><figure class="detail"><a class="zoom" href="../../../assets/img/d-stepbystep.webp" target="_blank" rel="noopener" title="Click to enlarge"><img src="../../../assets/img/d-stepbystep.webp" alt="Close-up of the Step by step panel" loading="lazy"></a><figcaption>One link of the chain at a time.</figcaption></figure>
+    
+  </div>
+  <figure class="shot"><a class="zoom" href="../../../assets/img/stepbystep-full.webp" target="_blank" rel="noopener" title="Click to enlarge"><img src="../../../assets/img/stepbystep.webp" alt="Practice mode with the Explanation and Step by step buttons above the hint ladder" loading="lazy"></a><figcaption>Explanation and Step by step in practice mode. <span class="zoomhint">Click to enlarge.</span></figcaption></figure>
+</section>
+
+<section class="step solo">
+  <div class="step-text">
+    <p class="step-n">Step 6</p>
+    <h2>Multi-select</h2>
+    <p>Drag a finger across several cells to select them all at once. Whatever number or candidate you then type is applied to every selected cell at the same time. It speeds up writing the same note into a row or a box.</p>
+    
+    
+  </div>
+  
+</section>
+
+<section class="step">
+  <div class="step-text">
+    <p class="step-n">Step 7</p>
+    <h2>The gear menu</h2>
+    <p>Everything else lives in the gear menu in the top corner.</p>
+<ul>
+<li><strong>Practice technique&hellip;</strong> opens the technique list, where you choose what to practise (Premium).</li>
+<li><strong>Enter custom puzzle</strong> lets you type in your own (Premium). See <a href="../custom-puzzles/">Custom puzzles</a>.</li>
+<li><strong>Reset puzzle</strong> takes the puzzle back to its starting position.</li>
+<li><strong>Theme</strong> chooses System, Light or Dark.</li>
+<li><strong>Check conflicts</strong> finds numbers that clash in a row, column or box.</li>
+<li><strong>Check against solution</strong> marks every number you placed that differs from the puzzle&rsquo;s solution, and says how many are wrong.</li>
+<li><strong>Clear all candidates</strong> removes all notes and automatic candidates.</li>
+<li><strong>Show conflicts immediately</strong> highlights clashes as you type instead of when you ask.</li>
+<li><strong>Highlight row/column/box</strong> tints the selected cell&rsquo;s row, column and box. Turn it off for a cleaner grid.</li>
+<li><strong>Larger numbers</strong> makes both digits and candidates bigger.</li>
+<li><strong>Statistics</strong> opens your statistics. See <a href="../statistics/">Statistics</a>.</li>
+<li><strong>Tour</strong> entries open the three guides built into the app.</li>
+</ul>
+    <figure class="detail"><a class="zoom" href="../../../assets/img/d-menu.webp" target="_blank" rel="noopener" title="Click to enlarge"><img src="../../../assets/img/d-menu.webp" alt="Close-up of the gear menu" loading="lazy"></a><figcaption>The gear menu, in the dark theme.</figcaption></figure>
+    
+  </div>
+  <figure class="shot"><a class="zoom" href="../../../assets/img/menu-dark-full.webp" target="_blank" rel="noopener" title="Click to enlarge"><img src="../../../assets/img/menu-dark.webp" alt="The gear menu with Game and Settings sections and the three Tour entries" loading="lazy"></a><figcaption>The gear menu. <span class="zoomhint">Click to enlarge.</span></figcaption></figure>
+</section>
+
+<section class="step">
+  <div class="step-text">
+    <p class="step-n">Step 8</p>
+    <h2>Comfortable to read</h2>
+    <p>Light and dark themes follow your device or can be forced either way. <em>Larger numbers</em> scales up both the digits and the candidates, for easier reading in a dim room or without glasses. Both can be switched at any time without losing your position.</p>
+    <figure class="detail"><a class="zoom" href="../../../assets/img/d-larger.webp" target="_blank" rel="noopener" title="Click to enlarge"><img src="../../../assets/img/d-larger.webp" alt="Close-up of the grid with larger numbers" loading="lazy"></a><figcaption>Larger numbers, here in the light theme.</figcaption></figure>
+    
+  </div>
+  <figure class="shot"><a class="zoom" href="../../../assets/img/larger-full.webp" target="_blank" rel="noopener" title="Click to enlarge"><img src="../../../assets/img/larger.webp" alt="The grid with larger numbers enabled in the light theme" loading="lazy"></a><figcaption>Larger numbers in the light theme. <span class="zoomhint">Click to enlarge.</span></figcaption></figure>
+</section>
+
+<section class="step">
+  <div class="step-text">
+    <p class="step-n">Step 9</p>
+    <h2>Mistakes and solved puzzles</h2>
+    <p>A wrong number is counted against the puzzle&rsquo;s solution, so at the end you can see how clean the solve was. When the last cell is filled correctly the grid plays a short animation and shows time, mistakes, hints used and the techniques used. All of it goes into your <a href="../statistics/">statistics</a>.</p>
+    <figure class="detail"><a class="zoom" href="../../../assets/img/d-solved.webp" target="_blank" rel="noopener" title="Click to enlarge"><img src="../../../assets/img/d-solved.webp" alt="Close-up of the solved screen" loading="lazy"></a><figcaption>Time, mistakes, hints and techniques used.</figcaption></figure>
+    
+  </div>
+  <figure class="shot"><a class="zoom" href="../../../assets/img/solved-full.webp" target="_blank" rel="noopener" title="Click to enlarge"><img src="../../../assets/img/solved.webp" alt="The puzzle solved screen with time, mistakes, hints and techniques used" loading="lazy"></a><figcaption>The solved screen. <span class="zoomhint">Click to enlarge.</span></figcaption></figure>
+</section>
+
+<p class="learn-nav"><a href="../learning-a-strategy/">&larr; Learning a strategy</a> <a href="../">All guides</a> <a href="../custom-puzzles/">Custom puzzles &rarr;</a></p>
+<section class="cta">
+  <h2>Try it yourself</h2>
+  <p>This guide is also built into the app, under the gear menu. Reading is always free.</p>
+  <p><span class="btn disabled" aria-disabled="true">Coming soon to the App Store</span></p>
+</section>
+</div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p>&copy; 2026 Joachim Hagedorn &middot; <a href="../../privacy/">Privacy</a> &middot; <a href="../../terms/">Terms</a> &middot; <a href="mailto:support@hagedornworks.se">support@hagedornworks.se</a></p>
+  </div>
+</footer>
+</body>
+</html>

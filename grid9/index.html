@@ -13,67 +13,115 @@
 <body class="marketing">
 <header class="site">
   <div class="wrap">
-    <a class="brand" href="./">Grid9 Sudoku</a>
+    <a class="brand" href="./" aria-label="Grid9 Sudoku, home"><span class="wm" aria-hidden="true">GRID<b>9</b></span><span class="brand-sub" aria-hidden="true">Sudoku</span></a>
     <nav class="site">
       <a href="./how-it-works/">How it works</a>
+      <a href="./learn/">Learn</a>
       <a href="./features/">Features</a>
       <a href="./support/">Support</a>
     </nav>
   </div>
 </header>
 <main>
-<div class="wrap">
 
-<section class="hero">
-  <div class="hero-text">
-    <h1>Learn <em>why</em> a move works &mdash; not just where it goes.</h1>
-    <p class="lead">Grid9 Sudoku is a sudoku app that teaches you the solving techniques. Ask for help in small doses, see the reasoning on the grid, and practise one technique at a time on puzzles built for it.</p>
+<section class="dhero">
+  <div class="wrap dwrap">
+    <p class="dkicker">A sudoku app that teaches</p>
+    <h1>Learn <em>why</em> a move works,<br>not just where it goes.</h1>
+    <p class="dlead">Ask for help in small doses, see the reasoning drawn on the grid, and practise one technique at a time on puzzles built for it.</p>
+    <p class="dcta"><span class="btn disabled" aria-disabled="true">Coming soon to the App Store</span></p>
+    <p class="dfine">For iPhone and iPad &middot; No account, no ads, no tracking</p>
+    <div class="dhero-media"><figure class="shot"><video autoplay muted loop playsinline preload="metadata" poster="../assets/img/main-play.webp" aria-label="A hint walking through a technique on the sudoku grid"><source src="../assets/video/main-play.mp4" type="video/mp4"></video></figure></div>
+  </div>
+</section>
+
+<section class="dsec">
+  <div class="wrap dwrap">
+    <div class="grid3 dcards">
+      <div class="card"><h3>Help in doses</h3><p>Start with <em>Where?</em>, the mildest nudge. Only ask for <em>Which cells?</em> and <em>Why?</em> if you still need them.</p></div>
+      <div class="card"><h3>See the reasoning</h3><p>A solid outline for the pattern, a dashed one and a struck-through digit for what can go. Step by step walks a chain one link at a time.</p></div>
+      <div class="card"><h3>Practise one technique</h3><p>Read how it works, then solve a puzzle that needs it. From Naked Singles to Jellyfish.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dsec dtabs" id="tour">
+  <div class="wrap dwrap">
+    <h2 class="dcenter">Everything in one place</h2>
+    <div class="dpills" role="tablist" aria-label="Features"><button type="button" role="tab" id="tab-notes" aria-controls="panel-notes" aria-selected="true">Notes</button><button type="button" role="tab" id="tab-hints" aria-controls="panel-hints" aria-selected="false">Hints</button><button type="button" role="tab" id="tab-ladder" aria-controls="panel-ladder" aria-selected="false">Step ladder</button><button type="button" role="tab" id="tab-practice" aria-controls="panel-practice" aria-selected="false">Practice</button><button type="button" role="tab" id="tab-stats" aria-controls="panel-stats" aria-selected="false">Statistics</button></div>
+    <div class="dpanels"><div class="dpanel" role="tabpanel" id="panel-notes" aria-labelledby="tab-notes">
+  <div class="dpanel-text"><h3>Your own notes, your own pace</h3><p>A grey row for notes, a blue row for numbers. Mark only the digits that have two or three places left, the way Snyder notation works, and let the grid show you the patterns.</p></div>
+  <a class="zoom" href="../assets/img/cands-full.webp" target="_blank" rel="noopener"><img class="dphone" src="../assets/img/cands.webp" alt="Your own notes, your own pace" loading="lazy"></a>
+</div><div class="dpanel" role="tabpanel" id="panel-hints" aria-labelledby="tab-hints" data-later>
+  <div class="dpanel-text"><h3>Know what to look for</h3><p>Tap Hint and the panel lists every technique that has a hit right now, with a count. It answers “what can I do here?” without giving the move away.</p></div>
+  <a class="zoom" href="../assets/img/overview-full.webp" target="_blank" rel="noopener"><img class="dphone" src="../assets/img/overview.webp" alt="Know what to look for" loading="lazy"></a>
+</div><div class="dpanel" role="tabpanel" id="panel-ladder" aria-labelledby="tab-ladder" data-later>
+  <div class="dpanel-text"><h3>Help in doses</h3><p>Where? Which cells? Why? Apply. Take only as much help as you need, and see the reasoning drawn on the grid.</p></div>
+  <a class="zoom" href="../assets/img/ladder-full.webp" target="_blank" rel="noopener"><img class="dphone" src="../assets/img/ladder.webp" alt="Help in doses" loading="lazy"></a>
+</div><div class="dpanel" role="tabpanel" id="panel-practice" aria-labelledby="tab-practice" data-later>
+  <div class="dpanel-text"><h3>One technique at a time</h3><p>Pick a technique, read how it works, then solve a puzzle that actually needs it. Two dozen techniques, from Naked Singles to Jellyfish.</p></div>
+  <a class="zoom" href="../assets/img/practice-picker-full.webp" target="_blank" rel="noopener"><img class="dphone" src="../assets/img/practice-picker.webp" alt="One technique at a time" loading="lazy"></a>
+</div><div class="dpanel" role="tabpanel" id="panel-stats" aria-labelledby="tab-stats" data-later>
+  <div class="dpanel-text"><h3>See what you really know</h3><p>For every technique: how often you found it yourself, peeked at it, or took it from a hint. Stored on your device only.</p></div>
+  <a class="zoom" href="../assets/img/stats-full.webp" target="_blank" rel="noopener"><img class="dphone" src="../assets/img/stats.webp" alt="See what you really know" loading="lazy"></a>
+</div></div>
+  </div>
+</section>
+
+<section class="dsec">
+  <div class="wrap dwrap">
+    <h2 class="dcenter">Light, dark, and easy to read</h2>
+    <p class="dlead dcenter">It follows your phone, or you choose. Bigger numbers, highlighted rows, columns and boxes, all optional. Free for everyone.</p>
+    <div class="dpair">
+      <figure><img src="../assets/img/overview.webp" alt="Grid9 in the dark theme" loading="lazy"><figcaption>Dark</figcaption></figure>
+      <figure><img src="../assets/img/larger.webp" alt="Grid9 in the light theme with larger numbers" loading="lazy"><figcaption>Light, with larger numbers</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="dsec">
+  <div class="wrap dwrap">
+    <h2 class="dcenter">Learn Grid9</h2>
+    <p class="dlead dcenter">Five short guides, with the real screens and a clear note on what is free and what needs Premium.</p>
+    <div class="dguides"><a class="dguide" href="learn/solving-routine/"><span class="step-n">Guide 1</span><strong>Solving routine</strong><span>How I work through a puzzle, tool by tool, in the order that works for me.</span></a><a class="dguide" href="learn/learning-a-strategy/"><span class="step-n">Guide 2</span><strong>Learning a strategy</strong><span>How to pick up one unfamiliar technique on purpose, using practice mode.</span></a><a class="dguide" href="learn/app-features/"><span class="step-n">Guide 3</span><strong>App features</strong><span>Every part of the screen and the menu, and what it does.</span></a><a class="dguide" href="learn/custom-puzzles/"><span class="step-n">Guide 4</span><strong>Custom puzzles</strong><span>Type in a puzzle from paper or another app and use every tool on it.</span></a><a class="dguide" href="learn/statistics/"><span class="step-n">Guide 5</span><strong>Statistics</strong><span>What the app tracks, what the numbers mean, and where they live.</span></a></div>
+  </div>
+</section>
+
+<section class="dsec">
+  <div class="wrap dwrap">
+    <div class="dstory">
+      <p class="dkicker">From the developer</p>
+      <h2>Why I made Grid9</h2>
+      <p>&ldquo;I thought of an app that could help you, but in levels: a small first nudge in the right direction. If that is not enough, you can get one more hint.&rdquo;</p>
+      <p class="fine">&mdash; Joachim Hagedorn</p>
+      <p><a href="why/">Read the story &rarr;</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="dsec dfinal">
+  <div class="wrap dwrap">
+    <h2>Try it yourself</h2>
     <p><span class="btn disabled" aria-disabled="true">Coming soon to the App Store</span></p>
-    <p class="fine">For iPhone and iPad. No account, no ads, no tracking.</p>
-  </div>
-  <figure class="shot ph"><div class="ph-inner"><span>Short screen recording</span><b>hero</b><small>A hint walking through a technique on the sudoku grid</small></div></figure>
-</section>
-
-<section class="grid3">
-  <div class="card">
-    <h3>Help in doses</h3>
-    <p>Stuck? Start with <em>Where?</em> &mdash; the mildest nudge. Only ask for <em>Which cells?</em> and <em>Why?</em> if you still need them. You decide how much to be told.</p>
-  </div>
-  <div class="card">
-    <h3>See the reasoning</h3>
-    <p>Every hint is drawn on the grid: a solid outline for the pattern, a dashed outline and a struck-through digit for what can be removed. Step-by-step mode walks a chain one link at a time.</p>
-  </div>
-  <div class="card">
-    <h3>Practise one technique</h3>
-    <p>Pick a technique from the library, read how it works, then solve a puzzle that actually needs it. Two dozen techniques, from Naked Singles to Jellyfish.</p>
+    <p class="dfine">Free to play. Premium unlocks the hint steps, practice runs and custom puzzles, with a free trial for new subscribers.</p>
   </div>
 </section>
 
-<section class="split">
-  <figure class="shot ph"><div class="ph-inner"><span>Screenshot</span><b>landing-strategy-panel</b><small>The strategy panel listing techniques that have a hit right now</small></div></figure>
-  <div>
-    <h2>Know what to look for</h2>
-    <p>Tap Hint and the strategy panel lists every technique that has a hit in the current position, with how many. It is the answer to &ldquo;what can I do here?&rdquo; &mdash; without giving the move away.</p>
-    <p><a href="how-it-works/">See how it works &rarr;</a></p>
-  </div>
-</section>
+<script>
+(function () {
+  var tabs = document.querySelectorAll('.dpills [role=tab]');
+  var panels = document.querySelectorAll('.dpanel');
+  if (!tabs.length) return;
+  document.documentElement.classList.add('js');
+  function show(i) {
+    tabs.forEach(function (t, j) { t.setAttribute('aria-selected', j === i ? 'true' : 'false'); });
+    panels.forEach(function (p, j) { p.hidden = j !== i; });
+  }
+  tabs.forEach(function (t, i) { t.addEventListener('click', function () { show(i); }); });
+  show(0);
+})();
+</script>
 
-<section class="split flip">
-  <div>
-    <h2>Comfortable to play</h2>
-    <p>Larger numbers for easier reading, optional row/column/box highlighting, light and dark themes, undo and redo, and your own notes or automatic candidates &mdash; whichever way you like to work.</p>
-    <p><a href="features/">All features &rarr;</a></p>
-  </div>
-  <figure class="shot ph"><div class="ph-inner"><span>Screenshot</span><b>landing-large-numbers</b><small>The grid with larger numbers enabled</small></div></figure>
-</section>
-
-<section class="cta">
-  <h2>Reading is always free</h2>
-  <p>Playing puzzles and reading about every technique costs nothing. Premium adds practising techniques on real puzzles, the full hint walkthroughs and entering your own puzzles &mdash; with a free trial for new subscribers.</p>
-  <p><span class="btn disabled" aria-disabled="true">Coming soon to the App Store</span></p>
-</section>
-
-</div>
 </main>
 <footer class="site">
   <div class="wrap">
